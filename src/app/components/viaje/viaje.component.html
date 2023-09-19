@@ -1,0 +1,60 @@
+
+<style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: pink;
+      padding: 20px;
+    }
+
+    form {
+      background-color: lightblue;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    label {
+      font-weight: bold;
+      color: darkblue;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    input {
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+      border: 2px solid darkblue;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 15px 30px;
+      border: none;
+      background-color: darkblue;
+      color: white;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: blue;
+    }
+  </style>
+
+<form    [formGroup]="formulario">
+<label for="nombre">Nombre:</label>
+<input type="text" id="nombre" formControlName="nombre">
+
+<!-- Campo para el correo electrónico -->
+<label for="email">Correo electrónico:</label>
+<input type="email" id="email" formControlName="nombre">
+
+<!-- Campo para la contraseña -->
+<label for="password">Contraseña:</label>
+<input type="password" id="password" formControlName="nombre">
+
+<!-- Botón de envío -->
+<button type="button" (click)="enviarDatos()">Mostrar Ticket</button>
+</form>

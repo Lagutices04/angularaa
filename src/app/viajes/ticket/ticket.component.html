@@ -1,0 +1,42 @@
+<p>ticket works!</p>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #3498db;
+    padding: 20px;
+  }
+
+  div {
+    background-color: #e74c3c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+
+  strong {
+    font-weight: bold;
+    color: #ecf0f1;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+</style>
+<div *ngIf="formData">
+  <strong>Nombre del Pasajero:</strong> {{ formData.nombre }}
+  <br>
+  <strong>Origen:</strong> {{ formData.origen }}
+  <br>
+  <strong>Destino:</strong> {{ formData.destino }}
+
+  <strong>fecha ida</strong> {{ formData.fecha }}
+
+  <strong>fecha regreso</strong> {{ formData.fecha }}
+</div>
+
+
+
+
+
+
+

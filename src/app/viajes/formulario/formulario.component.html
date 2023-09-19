@@ -1,0 +1,84 @@
+<p>formulario works!</p>
+
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1c40f;
+    padding: 20px;
+  }
+
+  form {
+    background-color: #2980b9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+
+  label {
+    font-weight: bold;
+    color: #ecf0f1;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 18px;
+  }
+
+  input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: calc(100% - 20px);
+    border: 2px solid #1abc9c;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 24px;
+    color: #e74c3c;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  button {
+    padding: 15px 30px;
+    border: none;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  button:hover {
+    background-color: #c0392b;
+  }
+</style>
+
+<form [formGroup]="formulario">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" formControlName="nombre">
+  
+    <label for="origen">Origen:</label>
+    <input type="text" id="origen" formControlName="origen">
+  
+    <label for="destino">Destino:</label>
+    <input type="text" id="destino" formControlName="destino">
+
+
+    <h2>Selecciona una fecha de ida </h2>
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fechaida" formControlName="fechaida" required   >
+
+    <h2>Selecciona una fecha de vuelta </h2>
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecharegreso" formControlName="fecharegreso" required>
+  
+    <button type="button" (click)="enviarDatos()">Mostrar registro de ticket</button>
+  </form>
+  
+
+  
+
+  
+  

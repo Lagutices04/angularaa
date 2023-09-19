@@ -1,0 +1,80 @@
+<p>oferta-vuelo works!</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agencia de Vuelos - Destinos y Ofertas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+    .destino {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .destino img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .destino h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .destino p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .oferta {
+      font-size: 18px;
+      font-weight: bold;
+      color: #FF5733;
+    }
+  </style>
+</head>
+<body>
+  <div class="destino">
+    <img src="components/img/newyork.jpg" alt="París">
+    <h2>París</h2>
+    <p>Descubre la Ciudad del Amor con nuestras increíbles ofertas.</p>
+    <p class="oferta">Oferta especial: Vuelos de solo $500.</p>
+    <a href="#">Ver detalles</a>
+  </div>
+
+  <div class="destino">
+    <img src="nyc.jpg" alt="Nueva York">
+    <h2>Nueva York</h2>
+    <p>La Gran Manzana te espera. ¡No te lo pierdas!</p>
+    <p class="oferta">Oferta especial: Vuelos de solo $600.</p>
+    <a href="#">Ver detalles</a>
+  </div>
+
+  <div class="destino">
+    <img src="tokyo.jpg" alt="Tokio">
+    <h2>Tokio</h2>
+    <p>Sumérgete en la cultura japonesa en la bulliciosa ciudad de Tokio.</p>
+    <p class="oferta">Oferta especial: Vuelos de solo $700.</p>
+    <a href="#">Ver detalles</a>
+
+
+    <button (click)="irAFormulario()">Ir al formulario</button>
+
+
+  </div>
+
+
+
+
+
+
+
+</body>
+</html>
+
